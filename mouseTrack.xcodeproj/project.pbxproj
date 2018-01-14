@@ -11,6 +11,8 @@
 		426BB8F3200B415E008F0659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BB8F2200B415E008F0659 /* ViewController.swift */; };
 		426BB8F5200B415E008F0659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426BB8F4200B415E008F0659 /* Assets.xcassets */; };
 		426BB8F8200B415E008F0659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426BB8F6200B415E008F0659 /* Main.storyboard */; };
+		426BB901200B420D008F0659 /* GlobalEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BB900200B420D008F0659 /* GlobalEventMonitor.swift */; };
+		426BB903200B7432008F0659 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426BB902200B7432008F0659 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		426BB8F7200B415E008F0659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		426BB8F9200B415F008F0659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		426BB8FA200B415F008F0659 /* mouseTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mouseTrack.entitlements; sourceTree = "<group>"; };
+		426BB900200B420D008F0659 /* GlobalEventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalEventMonitor.swift; sourceTree = "<group>"; };
+		426BB902200B7432008F0659 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				426BB8F6200B415E008F0659 /* Main.storyboard */,
 				426BB8F9200B415F008F0659 /* Info.plist */,
 				426BB8FA200B415F008F0659 /* mouseTrack.entitlements */,
+				426BB900200B420D008F0659 /* GlobalEventMonitor.swift */,
+				426BB902200B7432008F0659 /* Utils.swift */,
 			);
 			path = mouseTrack;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			files = (
 				426BB8F3200B415E008F0659 /* ViewController.swift in Sources */,
 				426BB8F1200B415E008F0659 /* AppDelegate.swift in Sources */,
+				426BB901200B420D008F0659 /* GlobalEventMonitor.swift in Sources */,
+				426BB903200B7432008F0659 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

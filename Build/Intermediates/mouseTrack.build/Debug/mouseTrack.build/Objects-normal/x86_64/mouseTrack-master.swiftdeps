@@ -1,0 +1,8 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "3970a796e68c11838371da3502e54700"
+build_time: [1515933688, 374607000]
+inputs:
+  "/Volumes/Nifty/Developer/XcodeProjects/mouseTrack/mouseTrack/ViewController.swift": [1515932657, 0]
+  "/Volumes/Nifty/Developer/XcodeProjects/mouseTrack/mouseTrack/AppDelegate.swift": [1515933688, 0]
+  "/Volumes/Nifty/Developer/XcodeProjects/mouseTrack/mouseTrack/GlobalEventMonitor.swift": [1515916500, 0]
+  "/Volumes/Nifty/Developer/XcodeProjects/mouseTrack/mouseTrack/Utils.swift": [1515933688, 0]
