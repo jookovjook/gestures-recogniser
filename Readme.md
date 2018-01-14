@@ -1,6 +1,6 @@
-![Technogram: A new social network for IT specialists](https://raw.githubusercontent.com/jookovjook/technogram-android/master/Art.png)
+![Technogram: A new social network for IT specialists](https://raw.githubusercontent.com/jookovjook/gestures-recogniser/master/images/Art.png)
 
-TechnoGram is a new social network for IT specialists. This repo provides Android part of the service.
+Ultimate cursore gestures recogniser.
 
 - [Introduction](#introduction)
 - [Features](#features)
@@ -8,122 +8,96 @@ TechnoGram is a new social network for IT specialists. This repo provides Androi
 - [Communication](#communication)
 - [Installation](#installation)
 - [Overview](#overview)
-    - [Authorization](#authorization)
-    - [Publications](#publications)
-    - [New publication](#new-publication)
-    - [Comment posts](#comment-posts)
-    - [Edit profile](#edit-profile)
-    - [Live DEMO](#live-demo)
+    - [Run program](#run-program)
+    - [Move cursor](#move-cursor)
+    - [Notification](#notification) 
+- [Add Own Patterns](#add-own-patterns)
 - [Credits](#credits)
 - [Donations](#donations)
 - [License](#license)
 
 ## Introduction
 
-TechnoGram is a social network for IT specialists. There is a place, where it's users can:
 
-• Share ther ideas and achievements to other people
-
-• Discuss topics with
-
-• Share their goals
-
-Current repo represent TechnoGram mobile app for Android.
-
-Server side availible at [technogram-server](https://github.com/jookovjook/technogram-server) repo.
+Gesture Recognizer (GR) is a program that tracks all movements of your cursor and indicates prescripted patterns of cursor movements (such as circled movement, zig-zag movement, etc.). GR can be installed on macOS X.
 
 ## Features
 
-- [x] Username/e-mail authorization
-- [x] Create posts with attached `images`, `description`, `@mentions`, `#hashtags`, `links`
-- [x] See posts of other users
-- [x] Leave comments to posts
-- [x] Like, double-like on posts
-- [x] Edit own profile (username, name, surname, email, bio)
-- [x] See profiles of other users
+- [x] Background monitoring all movements of your cursor
+- [x] Finding prescripted patterns of cursor movements
+- [x] You can add unlimited amount of your own patterns
+- [x] Showing notifications when a pattern was spotted
 
 ## Requirements
 
-- Android 5.0+ device
-- LAMP server
+- macOS 10.11 +
+- xCode 9.0 +
 
 ## Communication
 
-- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/technogram). (Tag 'technogram')
-- If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/technogram).
+- If you **need help**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/jookovjook). (Tag 'jookovjook')
+- If you'd like to **ask a general question**, use [Stack Overflow](http://stackoverflow.com/questions/tagged/jokovjook).
 - If you **found a bug**, open an issue.
 - If you **have a feature request**, open an issue.
 - If you **want to contribute**, submit a pull request.
 
 ## Installation
 
-### LAMP
-
-Firstly clone [technogram-server](https://github.com/jookovjook/technogram-server) to your LAMP server.
+Firstly clone [gestures-recognizer](https://github.com/jookovjook/gestures-recogniser) to your Mac.
 
 ```bash
-$ git clone https://github.com/jookovjook/technogram-server
+$ git clone https://github.com/jookovjook/gestures-recogniser
 ```
 
-Use the installation guide at [technogram-server](https://github.com/jookovjook/technogram-server) repository.
-
-### Android Studio
-
-Clone [current](https://github.com/jookovjook/technogram-android) respository 
-
-```bash
-$ git clone https://github.com/jookovjook/technogram-android
-```
-
-Add your server's addres to `utils/Config.java`
-
-```Java
-public static final String SERVER_URL = "http://your.server.com/";
-```
-
-Build project and run it on your Android device.
+`Build` project and `Run` it.
 
 ## Overview
 
-### Authorization
+### Run program
 
-• You can authorize to TechnoGram using your username (or e-mail) and password
+• Run GR program
 
-<img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/1.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/2.png" width="240">
+<img src="https://raw.githubusercontent.com/jookovjook/gestures-recogniser/master/images/mainwindow.png" width="592">
 
-### Publications
+••• (!!!) Minimise GR and focus cursor on any other window or Desktop.
 
-• You can see publications of other users
+### Move cursor
 
-<img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/13.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/14.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/15.png" width="240">
+• Make one of the prescript movements with your cursor
 
-### New Publication
+<img src="https://raw.githubusercontent.com/jookovjook/gestures-recogniser/master/images/gesture4.png" width="592">
 
-• You can create a new publication by pressing `NEW PUB` at the main screen.
+### Notification
 
-<img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/3.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/4.png" width="240">
+• After you made one of the prescripted gestures, you will see a notification with gesture recognised.
 
-• You can also attach `photos`, `@mentions`, `#hashtags` and `links` (like https://github.com/jookovjook/technogram-android) to your publication
+<img src="https://raw.githubusercontent.com/jookovjook/gestures-recogniser/master/images/notif.png" width="480">
 
-<img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/5.png" width="240">
+## Add Own Patterns
 
-### Comment posts
+There are 4 patterns (gestures) created in current project, but can add your own. As many as you wish!
 
-• You can also comment posts of other users
+To add your own pattern, edit `Utils.swift` the next way:
 
-<img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/6.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/7.png" width="240">
+Add `x` and `y` arrays of your pattern. In these arrays nodes of a pattern are encoded.
 
-### Edit profile
+```Swift
+let gn_x : [CGFloat] = [1, 0.5, 0.5, 0]
+let gn_y : [CGFloat] = [0, 1, 0, 1]
+```
 
-• You an edit your profile's info
+Add the constant for your gesture ro enum `Gestures`:
 
-<img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/11.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/12.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/8.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/9.png" width="240">     <img src="https://raw.githubusercontent.com/jookovjook/technogram-android/master/screenshots/10.png" width="240">
+```Swift
+case g1
+```
 
-### Live DEMO
+Add your patter to `compare` and `compareWith` functions.
 
-• Watch this YouTube live DEMO:
+Add your pattern to `movementHandler` function.
 
-[![TechoGram [DEMO]](https://img.youtube.com/vi/ONhNDH2S7Ns/0.jpg)](https://www.youtube.com/watch?v=ONhNDH2S7Ns)
+DONE.
+
 
 ## Credits
 
