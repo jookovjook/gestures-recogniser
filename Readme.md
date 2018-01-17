@@ -1,4 +1,4 @@
-![Technogram: A new social network for IT specialists](https://raw.githubusercontent.com/jookovjook/gestures-recogniser/master/images/Art.png)
+![Gestures recongiser](https://raw.githubusercontent.com/jookovjook/gestures-recogniser/master/images/Art.png)
 
 Ultimate cursor gestures recogniser.
 
