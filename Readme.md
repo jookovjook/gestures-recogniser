@@ -121,7 +121,7 @@ I'll be gratefull if you donate some funds to my `Etherium wallet`:
 
 ## License
 
-TechnoGram is released under the Apache 2.0 license.
+Gestures Recogniser is released under the Apache 2.0 license.
 
     Copyright 2017 JookovJook
     
