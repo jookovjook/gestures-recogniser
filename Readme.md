@@ -123,7 +123,7 @@ I'll be gratefull if you donate some funds to my `Etherium wallet`:
 
 Gestures Recogniser is released under the Apache 2.0 license.
 
-    Copyright 2017 JookovJook
+    Copyright 2018 JookovJook
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
